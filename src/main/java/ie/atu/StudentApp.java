@@ -2,6 +2,7 @@ package ie.atu;
 
 import java.util.Scanner;
 import java.io.File;
+import java.io.IOException;
 public class StudentApp extends Student {
 
     public StudentApp(String studentName, int studentNo, int studentAge, String studentAddress) {
@@ -23,6 +24,20 @@ public class StudentApp extends Student {
         student1.setStudentAddress(scanner.nextLine());
 
         student1.toString();
+
+        String fileName = "";
+        File myFile = new File(fileName);
+
+        try
+        {
+            System.out.println("Enter name of file to be created: ");
+            fileName = scanner.nextLine();
+            myFile.createNewFile();
+        }
+        catch (IOException e)
+        {
+            e.printStackTrace();
+        }
 
 
 
