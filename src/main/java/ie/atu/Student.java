@@ -1,16 +1,18 @@
 package ie.atu;
 
+import java.util.Scanner;
 public class Student {
+    Scanner keyboard = new Scanner(System.in);
     private String studentName;
     private int studentNo;
     private int studentAge;
     private String studentAddress;
 
     public Student() {
-        studentName = "";
-        studentNo = 0;
-        studentAge = 0;
-        studentAddress = "";
+        this.studentName = "";
+        this.studentNo = 0;
+        this.studentAge = 0;
+        this.studentAddress = "";
     }
 
     public Student(String studentName, int studentNo, int studentAge, String studentAddress) {
@@ -60,5 +62,17 @@ public class Student {
                 ", studentAge=" + studentAge +
                 ", studentAddress='" + studentAddress + '\'' +
                 '}';
+    }
+
+    public void getData()
+    {
+        System.out.println("Enter student name: ");
+        studentName = keyboard.nextLine();
+        System.out.println("Enter student ID: ");
+        studentNo = keyboard.nextInt();
+        System.out.println("Enter student Age: ");
+        studentAge = keyboard.nextInt();
+        System.out.println("Enter student address: ");
+        studentAddress = keyboard.nextLine();
     }
 }
