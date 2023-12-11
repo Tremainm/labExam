@@ -1,7 +1,9 @@
 package ie.atu;
 
-public class Main {
+public class StudentApp extends Student {
     public static void main(String[] args) {
+
+
 
     }
 }
