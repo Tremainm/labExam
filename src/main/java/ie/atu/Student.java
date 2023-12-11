@@ -2,7 +2,7 @@ package ie.atu;
 
 import java.util.Scanner;
 public class Student {
-    Scanner keyboard = new Scanner(System.in);
+    Scanner scanner = new Scanner(System.in);
     private String studentName;
     private int studentNo;
     private int studentAge;
@@ -67,12 +67,13 @@ public class Student {
     public void getData()
     {
         System.out.println("Enter student name: ");
-        studentName = keyboard.nextLine();
+        studentName = scanner.nextLine();
         System.out.println("Enter student ID: ");
-        studentNo = keyboard.nextInt();
+        studentNo = scanner.nextInt();
         System.out.println("Enter student Age: ");
-        studentAge = keyboard.nextInt();
+        studentAge = scanner.nextInt();
         System.out.println("Enter student address: ");
-        studentAddress = keyboard.nextLine();
+        studentAddress = scanner.nextLine();
+
     }
 }
