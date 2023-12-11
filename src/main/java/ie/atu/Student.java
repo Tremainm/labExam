@@ -1,0 +1,64 @@
+package ie.atu;
+
+public class Student {
+    private String studentName;
+    private int studentNo;
+    private int studentAge;
+    private String studentAddress;
+
+    public Student() {
+        studentName = "";
+        studentNo = 0;
+        studentAge = 0;
+        studentAddress = "";
+    }
+
+    public Student(String studentName, int studentNo, int studentAge, String studentAddress) {
+        this.studentName = studentName;
+        this.studentNo = studentNo;
+        this.studentAge = studentAge;
+        this.studentAddress = studentAddress;
+    }
+
+    public String getStudentName() {
+        return studentName;
+    }
+
+    public void setStudentName(String studentName) {
+        this.studentName = studentName;
+    }
+
+    public int getStudentNo() {
+        return studentNo;
+    }
+
+    public void setStudentNo(int studentNo) {
+        this.studentNo = studentNo;
+    }
+
+    public int getStudentAge() {
+        return studentAge;
+    }
+
+    public void setStudentAge(int studentAge) {
+        this.studentAge = studentAge;
+    }
+
+    public String getStudentAddress() {
+        return studentAddress;
+    }
+
+    public void setStudentAddress(String studentAddress) {
+        this.studentAddress = studentAddress;
+    }
+
+    @Override
+    public String toString() {
+        return "Student{" +
+                "studentName='" + studentName + '\'' +
+                ", studentNo=" + studentNo +
+                ", studentAge=" + studentAge +
+                ", studentAddress='" + studentAddress + '\'' +
+                '}';
+    }
+}
